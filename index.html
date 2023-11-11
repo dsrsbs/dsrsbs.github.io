@@ -44,6 +44,7 @@ var video = document.getElementById("myVideo");
 
 // Get the button
 var btn = document.getElementById("myBtn");
+var mtext = document.getElementById("mtext");  
 
 // Pause and play the video, and change the button text
 function myFunction() {
@@ -53,6 +54,8 @@ function myFunction() {
   } else {
     video.pause();
     btn.innerHTML = "Play";
+btn.style.display="none";
+    btn.style.display="block";
   }
 }
 </script>
@@ -66,11 +69,13 @@ function myFunction() {
 <!-- Optional: some overlay text to describe the video -->
 <div class="content">
   <h1>D.S.R Software & Business Services</h1>
-<h2>We talk less but deliver more</h2>
+<h2 style="color:wheat">We talk less but deliver more</h2>
+<button id="myBtn" onclick="myFunction()">Enter</button>
+  <div id="mtext">
   <p>Find out how our products and services can add value to your company<div>Email : dsr_sbs@yaoo.com</div></p>
+  </div>
 
   <!-- Use a button to pause/play the video with JavaScript -->
-  <button id="myBtn" onclick="myFunction()">Pause</button>
 </div> 
 </body>
 </html>
