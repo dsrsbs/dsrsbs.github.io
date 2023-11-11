@@ -48,6 +48,12 @@ var mtext = document.getElementById("mtext");
 
 // Pause and play the video, and change the button text
 function myFunction() {
+document.getElementById("myBtn").style.display="none";
+document.getElementById("mtext").style.display="block";
+document.getElementById("myVideo").play();
+
+}
+function myFunctionoeg() {
   if (video.paused) {
     video.play();
     btn.innerHTML = "Pause";
@@ -73,7 +79,7 @@ btn.style.display="none";
 <h2 style="color:wheat">We talk less but deliver more</h2>
 <button id="myBtn" onclick="myFunction()">Enter</button>
   <div id="mtext" style="display:none;">
-  <p>Find out how our products and services can add value to your company<div>Email : dsr_sbs@yaoo.com</div></p>
+  <p>Find out how our products and services can add value to your company<div>Email : dsr_sbs@yahoo.com</div></p>
   </div>
 
   <!-- Use a button to pause/play the video with JavaScript -->
