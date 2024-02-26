@@ -6,35 +6,20 @@
 <style>
 
 .slist{
-background-color:lightgrey;color:black;display:inline-block;border-radius:0.5em;padding:0.5em;margin:0.5em auto;
-}
-#myVideo {
-/*  position: fixed;
-  right: 0;
-  bottom: 0; left:0;
-  min-width: 100%;
-  min-height: 100%;
-*/
-width: 100%;
+background-color:antiquewhite;color:black;display:inline-block;border-radius:0.5em;padding:0.5em;margin:0.5em 0.5em auto;
 }
 
-/* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+.yellowh3 {background-color:maroon; }
+.
+#myVideo {
   width: 100%;
-  padding:0;
-margin:0; left:0;padding-bottom:1em;
 }
 
 /* Style the button used to pause/play the video */
 #myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
+  font-size: large;
+  padding: 0.5em;
+  border: gold;
   background: crimson;
   color: #fff;
   cursor: pointer; border-radius:0.5em;font-weight:bold;
@@ -46,63 +31,84 @@ margin:0; left:0;padding-bottom:1em;
   color: black;
 }
 </style>
-<script>
-// Get the video
-var video = document.getElementById("myVideo");
 
-// Get the button
-var btn = document.getElementById("myBtn");
-var mtext = document.getElementById("mtext");  
-
-// Pause and play the video, and change the button text
-function myFunction() {
-document.getElementById("myBtn").style.display="none";
-document.getElementById("mtext").style.display="block";
-document.getElementById("myVideo").play();
-document.getElementById("h21").style.display="none";
-document.getElementById("h22").style.display="block";
-
-}
-function myFunctionoeg() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-btn.style.display="none";
-    btn.style.display="block";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-
-  }
-}
-</script>
 </head>
-<body style="text-align:center;">
+<body style="text-align:center;background:lightblue;">
+    <h1 style="margin:0;text-align:center;background-color:black;color:gold;padding:0.5em;margin-bottom:2em;">D.S.R consulting services</h1>
+<div class="row" style="padding:0.5em;">
+<div id=""  class="mob40" style="">
  <!-- The video -->
-<video autoplay muted loop id="myVideo">
+  <video autoplay controls muted loop style="width:100%;">
   <source src="wolf-cs.mp4" type="video/mp4">
 </video>
+</div>
+<div id=""  class="mob40" style="border-radius:1em;">
+  <h2 id="h11" style="margin-top:1em;"></h2>
+<h2 id="h21" style="color:purple;font-weight:normal;margin:1em 0 ;font-style:italic;">&quot;&nbsp;Winners are active doers,<br>losers are inactives who end up envying other's&nbsp;&quot;</h2>
+<ul style="text-align:left;">
+<li>We don't know each other. Come let us get to know each other to check our compatibility.</li>
+<li>We don't ask you for any reference or introductions because we trust our judgement</li></ul>
+</div>
+</div>
+<h2 style="text-align:center;background-color:none;padding:0.5em;margin:2em 0; font-weight:normal;color:white;background-color:green;">About us</h2>
+<div class="row" style="">
 
-<!-- Optional: some overlay text to describe the video -->
-<div class="content">
-  <h1>D.S.R consulting services</h1>
-<h2 id="h21" style="color:wheat;font-weight:normal;margin-bottom:0;font-style:italic;">&quot; Winners are active doers,<br>losers are inactives who end up envying other's growth<br>Who are you ? &quot;</h2>
-<h2 id="h22" style="color:wheat;font-weight:normal;margin-bottom:0;font-style:italic;display:none;">&quot; We talk less but deliver more &quot;</h2>
-<div id="md" style="padding:1em;padding-top:0.5em;"><a style="color:white;" href="srk.pdf" target="_blank">Managing Director</a></div>
-<button id="myBtn" onclick="myFunction()">Enter</button>
-  <div id="mtext" style="display:none;">
-  <div style="border:solid thin grey;background-color:none;color:black;width:fit-content;padding:0.5em 1em;margin:auto;border-radius:0.5em;">
+<div id=""  class="mob30 mob40e" >
+<h3 style="text-align:center;background-color:maroon;color:white;border-radius:5px;padding:0.5em;margin:0;">Government of India</h3>
+<div style="padding:0.5em 0;">
+Company Registration Number</div>
+<div style="padding:0.5em 0;">
+TN02A0069065
+</div>
+<h3 style="text-align:center;background-color:purple;color:white;border-radius:5px;padding:0.5em;margin:0.5em;">Hi there</h3>
+<h3 style="text-align:center;padding:0.5em;margin:0.5em auto;color:green;">&quot;&nbsp; We talk less but deliver more&quot;&nbsp;</h3>
+<h2 id="h22" style="color:grey;font-weight:normal;margin-bottom:0;font-style:italic;font-size:large;margin-top:0.1em;"><a style="color:black;" href="srk.pdf" target="_blank">D. Senthil Rajkumar B.E</a></h2>
+<div id="md" style="padding:0.5em;color:darkgreen;font-size:smaller;font-style:italic;">Founder & Chief Officer</div>
+<div style="text-align:center;padding:0.5em;padding-bottom:1em;margin:auto;color:maroon;font-size:small;">Age : 51, 30+ years in software & business </div>
+<div style="text-align:left;font-size:normal;color:maroon;padding:0.5em;">Due privacy & security concerns our executives don't use linkedin and other unsafe web portals</div>
+
+</div>
+
+<div id=""  class="mob30 mob40e" >
+<div style="margin: 0;background-color: maroon;padding: 0.5em;text-align:center;font-size:larger;padding:0.5em;border-radius:0.5em;color:white;">What we do ?</div>
+
+
 <div class="slist">Software development</div>
 <div class="slist">Management consulting</div>
 <div class="slist">IT consulting</div>
 <div class="slist">Business services</div>
+<div class="slist">Outsourcing</div>
+<h3 style=""text-align:center;font-weight:normal;">USD $250 / Initial consultation</h3>
+<div style="text-align:left;font-weight:normal;padding:0.5em;padding-bottom:1em;">Email us to schedule a telephone consultation and find out how our products and services can add value to your company</div>
 </div>
-  <div style="border:solid thin grey;background-color:white;color:black;width:fit-content;padding:0.5em 1em;margin:0.5em auto;border-radius:0.5em;">Find out how our products and services can add value to your company</div>
-<div style="padding:1em;padding-top:0.5em;"><a style="color:white;" href="consultants.pdf" target="_blank">Work for us</a></div>
-<div style=""text-align:center;">Email : dsr_sbs@yahoo.com</div><divv style="text-align:center;font-size:smaller;color:wheat;">Chennai, India</div></div>
-  </div>
 
-  <!-- Use a button to pause/play the video with JavaScript -->
-</div> 
+
+<div id=""  class="mob30 mob40e" >
+<div style="margin: 0;background-color: maroon;padding: 0.5em;text-align:center;font-size:larger;padding:0.5em;border-radius:0.5em;color:white;">Contact us</div>
+<div style="text-align:center;padding:0.5em;margin:0.5em 0;">
+<div style="padding:1em;padding-top:0.5em;"><a style="color:purple;" href="consultants.pdf" target="_blank">Work for us</a></div>
+
+<div style="text-align:center;">Email : dsr_sbs@yahoo.com</div>
+<div style="text-align:center;">SMS : 91-7010342306</div>
+<div style="text-align:center;padding:0.5em;font-size:small;">Text only. Non-voice</div>
+<div style="text-align:center;font-size:normal;color:black;">Chennai, India</div>
+<h3 style="text-align:center;background-color:purple;color:white;border-radius:5px;padding:0.5em;margin:0.5em;">Privacy, security & data</h3>
+<div style="padding: 0;">
+<div style="padding:0;text-align:center;padding-bottom:1em;">
+<ul style="text-align:left;">
+<li>D.S.R does not sell customer data</li>
+<li>D.S.R has a zero tracking, zero analytics and zero cookies policy</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<div style="background:darkgrey;margin: 1em 0 auto;padding:1em 0;">All rights reserved. Copyright protected 2016 -2024 D.S.R Consulting Services</div>
 </body>
 </html>
+
